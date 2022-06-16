@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,6 +17,12 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 /* regole per header */
@@ -28,7 +38,24 @@ body {
 }
 
 .content .intro {
+    margin-bottom: 30px;
     text-align: center;
+}
+
+.card {
+    float: left;
+    width: calc(calc(100% - 60px) /3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: lightcoral;
+}
+
+.card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.card__image {
+    width: 100px;
 }
 
 /* regole di debug */
