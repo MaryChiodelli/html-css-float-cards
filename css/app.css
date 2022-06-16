@@ -22,6 +22,14 @@ body {
     color: #E53170;
 }
 
+/* regole per main */
+.content {
+    padding: 15px;
+}
+
+.content .intro {
+    text-align: center;
+}
 
 /* regole di debug */
 * {
