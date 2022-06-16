@@ -49,17 +49,28 @@ body {
 }
 
 .card {
-    float: left;
-    width: calc(calc(100% - 60px) /3);
+    /* float: left;
+    width: calc(calc(100% - 60px) / 3);
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
     background-color: black;
     box-shadow: 0 0 10px black;
     color: white;
 }
 
-.card:nth-child(3n) {
+/* .card:nth-child(3n) {
     margin-right: 0;
+} */
+
+.col {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.row {
+    margin: 0 -15px;
 }
 
 .card__image {
@@ -69,7 +80,7 @@ body {
 }
 
 .card__name {
-    margin: 15px 0 10px 0;
+    padding-top: 15px;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -79,6 +90,7 @@ body {
     font-size: 14px;
 }
 
+.card__name,
 .card__job {
     margin-bottom: 8px;
 }
@@ -86,6 +98,6 @@ body {
 
 
 /* regole di debug */
-* {
-    /* border: 1px solid red; */
+.debug * {
+    border: 1px solid red;
 }
